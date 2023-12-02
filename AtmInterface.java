@@ -1,8 +1,5 @@
-package day11;
 import java.util.Scanner;
-
 class BankAccount {
-	
 	String name;
 	String userId;
 	String userpin;
@@ -10,13 +7,6 @@ class BankAccount {
 	float balance = 100000f;
 	int transactions = 0;
 	String transactionHistory = "";
-	
-	// BankAccount(String name, String userId, String user pin, String accountNo) {
-	// this.name = name;
-	// this.userName = userId;
-	// this.password = user pin;
-	// this.accountNo = accountNo;
-	// }
 	
 	public void register() {
 		Scanner sc = new Scanner(System.in);
@@ -144,8 +134,6 @@ class BankAccount {
 }
 
 public class AtmInterface {
-	
-	
 	public static int takeIntegerInput(int limit) {
 		int input = 0;
 		boolean flag = false;
@@ -170,7 +158,6 @@ public class AtmInterface {
 	}
 	
 	public static void main(String[] args) {
-		
 		System.out.println("\n**********WELCOME TO ATM INTERFACE**********\n");
 		System.out.println("1.Register \n2.Exit");
 		System.out.print("Enter Your Choice - ");
